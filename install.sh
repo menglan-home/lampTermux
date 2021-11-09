@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 HELPERS=(
-  colors animation banner package switchcase
-  stat signal screen cursor finish
+  colors animation banner package config switchcase
+  binary stat signal screen cursor finish
 )
 
 for HELPER in ${HELPERS[@]}; do
@@ -18,6 +18,12 @@ function main() {
 
   packages
   switchCase "Install" "Packages" installPackages
+
+  configuration
+
+  binaryFile
+
+  mainAlert
 
 }
 

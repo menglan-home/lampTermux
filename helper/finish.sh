@@ -4,7 +4,10 @@ MYTERMUX_VERSION="0.6.0"
 
 function alertFinish() {
 
-  echo -e "‏‏‎‏‏‎\n    ‎‏‏‎⚠️ Installation Finish, but you need restart Termux to clear setup\n"
+  echo -e "⚠️ Restart Termux so that the service-daemon is started."
+  echo -e "⚠️ On first boot run 'lamp' to start service."
+  echo -e "⚠️ To check status web server run 'lamp-check' 
+    (require start service first).\n"
 
 }
 
@@ -27,7 +30,7 @@ function alertTorch() {
 function mainAlert() {
 
   alertFinish
-  alertNotification
-  alertTorch
+  # alertNotification
+  # alertTorch
 
 }
