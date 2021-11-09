@@ -20,3 +20,5 @@ function main() {
   switchCase "Install" "Packages" installPackages
 
 }
+
+screenSize main
