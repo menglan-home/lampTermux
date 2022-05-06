@@ -48,27 +48,27 @@ Here are some details about last version i use
   <summary>Termux (Android)</summary>
 
   - ```bash
-    $ pkg update && pkg upgrade
+    pkg update && pkg upgrade
     ```
 
   - ```bash
-    $ pkg install ncurses-utils git
+    pkg install ncurses-utils git
     ```
 
   - ```bash
-    $ git clone https://github.com/xshin404/lampTermux
+    git clone https://github.com/xshin404/lampTermux
     ```
 
   - ```bash
-    $ cd lampTermux
+    cd lampTermux
     ```
 
   - ```bash
-    $ chmod +x install.sh
+    chmod +x install.sh
     ```
 
   - ```bash
-    $ ./install.sh
+    ./install.sh
     ```
 
   <strong>⚠️ After installation Restart Termux so that the service-daemon is started and then on first boot type 'lamp' to start service..</strong>
@@ -267,13 +267,13 @@ Here are some details about last version i use
   After enable MySQL Service, now login mysql with root user.
 
   ```bash
-  $ mysql -u $(whoami)
+  $mysql -u $(whoami)
   ```
 
   After login, type this on MySQL (To use database mysql)
 
   ```bash
-  MariaDB [(none)]> use mysql;
+ use mysql;
   ```
 
   Database changed
